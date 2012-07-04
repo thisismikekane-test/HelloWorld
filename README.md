@@ -25,3 +25,5 @@ Hello on Friday June 22, 2012
 Hello on Monday July  2, 2012
 
 Hello on Tuesday July  3, 2012
+
+Hello on Wednesday July  4, 2012
