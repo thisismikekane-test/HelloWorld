@@ -135,3 +135,5 @@ Hello on Monday December 31, 2012
 Hello on Tuesday January  1, 2013
 
 Hello on Wednesday January  2, 2013
+
+Hello on Thursday January  3, 2013
