@@ -5,7 +5,7 @@
 # Specify first date to start, then convert to epoch time
 #  (Should be a Sunday)
 START='2012/06/03 12:00:00 -0400'
-START=$(date --date $START +%s)
+START=$(date --date "$START" +%s)
 
 # 1's specify which pixels should be filled to spell
 #  HELLO WORLD from the days Sunday - Monday
