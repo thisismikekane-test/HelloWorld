@@ -59,14 +59,16 @@ PIXELS=(0 1 1 1 1 1 0 \
 # It takes 315 to spell HELLO WORLD using the pixels above
 for i in {0..314} 
 do
-	TODAY=$((START+60*60*24*i)) # Compute what day commit should be made
-	
-	# Say hello to the readme file
-	echo -e "\nHello on $(date --date @$TODAY +'%A %B %e, %Y')" \
-		>> README.md
-	
-	# Make the git commit
-	git commit -a -m "Hello on $(date --date @$TODAY +'%A %B %e, %Y')" \
-		--date "$(date --date @$TODAY +'%Y.%m.%dT%H:%M:%S -0400')"
+	if [PIXELS==1]
+		TODAY=$((START+60*60*24*i)) # Compute what day commit should be made
+		
+		# Say hello to the readme file
+		echo -e "\nHello on $(date --date @$TODAY +'%A %B %e, %Y')" \
+			>> README.md
+		
+		# Make the git commit
+		git commit -a -m "Hello on $(date --date @$TODAY +'%A %B %e, %Y')" \
+			--date "$(date --date @$TODAY +'%Y.%m.%dT%H:%M:%S -0400')"
+	fi
 done
 	
