@@ -59,7 +59,7 @@ PIXELS=(0 1 1 1 1 1 0 \
 # It takes 315 to spell HELLO WORLD using the pixels above
 for i in {0..314} 
 do
-	if [${PIXELS[i]} eq 1]
+	if [ ${PIXELS[i]} -eq 1 ]
 	then
 		TODAY=$((START+60*60*24*i)) # Compute what day commit should be made
 		
