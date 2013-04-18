@@ -60,6 +60,7 @@ PIXELS=(0 1 1 1 1 1 0 \
 for i in {0..314} 
 do
 	if [PIXELS==1]
+	then
 		TODAY=$((START+60*60*24*i)) # Compute what day commit should be made
 		
 		# Say hello to the readme file
